@@ -17,13 +17,13 @@ class ButtonWidgets extends StatelessWidget {
 
       ,SizedBox(height: 10)
       ,FloatingActionButton( onPressed:() {
-    BlocProvider.of<CounterBloc>(context).add(DecramentEvent());
+    BlocProvider.of<CounterBloc>(context).add((ResetEvent()));
     },
         child: Icon(Icons.restart_alt),)
       ,SizedBox(height: 10,),
 
       FloatingActionButton(onPressed:() {
-    BlocProvider.of<CounterBloc>(context).add(DecramentEvent());
+    BlocProvider.of<CounterBloc>(context).add(DecramentEvent ());
     },
         child: Icon(Icons.remove),)
 

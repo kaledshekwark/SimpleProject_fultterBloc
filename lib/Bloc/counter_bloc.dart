@@ -16,7 +16,7 @@ class CounterBloc extends Bloc<CounterEvent, CounterState> {
         }
 
       if(event is DecramentEvent){
-      count+=1;
+      count-=1;
       emit(CounterChangeValueState(Counter: count));
       }
       if(event is ResetEvent){
